@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Créer un Nouvel Événement</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
             <div>
-                <label>Titre du le Événement</label>
+                <label>Titre de l'Événement</label>
                 <input type="text" name="title" maxlength="50" value="<?php echo $title; ?>">
                 <span><?php echo $title_err; ?></span>
             </div>
@@ -142,12 +142,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <span><?php echo $description_err; ?></span>
             </div>
             <div>
-                <label>Date du le Événement</label>
+                <label>Date de l'Événement</label>
                 <input type="datetime-local" name="event_date" value="<?php echo $event_date; ?>">
                 <span><?php echo $event_date_err; ?></span>
             </div>
             <div>
-                <label>Liieu</label>
+                <label>Lieu</label>
                 <input type="text" name="location" maxlength="60" value="<?php echo $location; ?>">
                 <span><?php echo $location_err; ?></span>
             </div>
@@ -157,7 +157,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div>
                 <label>Image de l'Événement</label>
-                <label for="fileInput" class="custom-file-input">Selectionne une photo</label>
+                <label for="fileInput" class="custom-file-input">Sélectionne une photo</label>
                 <input type="file" id="fileInput" name="profile_image" accept="image/*" style="display: none;">
                 <span><?php echo $image_err; ?></span>
             </div>
