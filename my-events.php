@@ -77,7 +77,7 @@ unset($pdo);
     <?php include('includes/header.php'); ?> <!-- En-tête du site -->
 
     <div class="container">
-        <h2>Mes Événements</h2>
+        <h2>Mes fête</h2>
         <div class="event-container">
             <?php if (count($events) > 0) : ?>
                 <?php foreach ($events as $event) : ?>
@@ -99,7 +99,7 @@ unset($pdo);
                     </div>
                 <?php endforeach; ?>
             <?php else : ?>
-                <p>Aucun événement à afficher.</p>
+                <p>Aucun fête à afficher.</p>
             <?php endif; ?>
         </div>
     </div>
