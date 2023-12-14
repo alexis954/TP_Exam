@@ -69,7 +69,7 @@ if (isset($_GET["id"]) && !empty(trim($_GET["id"]))) {
 
 <body>
     <div class="container">
-        <h2>Détails de l'Événement<br><?php echo htmlspecialchars($event["title"]); ?></h2>
+        <h2>Détails de l'fête<br><?php echo htmlspecialchars($event["title"]); ?></h2>
         <!-- Image de l'événement -->
         <?php if (!empty($event["image"])) : ?>
             <img class="event_image" src="data:image/jpeg;base64,<?php echo $event["image"]; ?>" alt="Image de l'événement" style="width:100%;height:auto;">
